@@ -1,0 +1,16 @@
+.grid {
+    display: flex;   /* <--- required */
+    height: 200px;
+    width: 200px;
+}
+
+.column {
+    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+}
+
+.row {
+    margin: 2px;
+    background: gold;
+    text-align: center;
+    padding: 10px;
+}
