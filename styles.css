@@ -1,16 +1,19 @@
 .grid {
     display: flex;   /* <--- required */
-    height: 200px;
-    width: 200px;
+    overflow: hidden;
+
+    
+
 }
 
 .column {
-    flex: 1; /* <--- required (style column to fill the same space as the other columns) */
+    flex: 1 ; /* <--- required (style column to fill the same space as the other columns) */
+    
 }
 
 .row {
-    margin: 2px;
+    margin: 0;
     background: gold;
     text-align: center;
-    padding: 10px;
+    flex-shrink: 100;
 }
