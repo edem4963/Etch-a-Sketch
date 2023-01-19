@@ -1,6 +1,7 @@
 .grid {
     display: flex;   /* <--- required */
-    overflow: hidden;
+    
+    
 
     
 
@@ -15,5 +16,6 @@
     margin: 0;
     background: gold;
     text-align: center;
-    flex-shrink: 100;
+    flex: auto;
+    box-sizing: border-box;
 }

@@ -1,4 +1,4 @@
-let box = 16;
+let box = 40;
 let columns = box;
 let rows = box;
 
