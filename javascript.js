@@ -1,4 +1,4 @@
-let box = 40;
+let box = 50;
 let columns = box;
 let rows = box;
 
@@ -27,3 +27,11 @@ for (let i = 0; i < columns; ++i) {
     grid.appendChild(column); // append column inside grid
 }
 document.body.appendChild(grid);
+
+const hover = document.querySelectorAll("div.row");
+console.log(hover);
+hover.forEach( (item) => {
+    item.addEventListener('mouseenter', () => {
+        item.style.backgroundColor = "red";
+    })
+});
