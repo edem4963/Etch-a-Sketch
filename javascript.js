@@ -1,5 +1,6 @@
-let box = 16;
+let box = 16;// initial box when the page is first loaded
 
+// created a function for the grid to mae it resuable with an event listener
 function gridstruct(){
 
     let columns = box;
@@ -40,8 +41,9 @@ hover.forEach( (item) => {
 });
 }
 
-gridstruct();
+gridstruct();// call functions of grid for inital load
 
+// build a button that allow user to input the # of rows and columns for the grid
 let btn = document.querySelector('#btn');
 btn.addEventListener('click', () =>{
    let x = prompt('Enter a # for number of rows and column');
