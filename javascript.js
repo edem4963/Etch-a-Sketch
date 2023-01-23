@@ -1,5 +1,8 @@
-let box = 50;
-let columns = box;
+let box = 16;
+
+function gridstruct(){
+
+    let columns = box;
 let rows = box;
 
 let grid = document.createElement('div');
@@ -28,10 +31,22 @@ for (let i = 0; i < columns; ++i) {
 }
 document.body.appendChild(grid);
 
+
 const hover = document.querySelectorAll("div.row");
-console.log(hover);
 hover.forEach( (item) => {
     item.addEventListener('mouseenter', () => {
         item.style.backgroundColor = "red";
     })
+});
+}
+
+gridstruct();
+
+let btn = document.querySelector('#btn');
+btn.addEventListener('click', () =>{
+   let x = prompt('Enter a # for number of rows and column');
+   let div = document.getElementsByClassName('grid')[0];
+   box = x.valueOf();
+   gridstruct();
+   div.remove();
 });
